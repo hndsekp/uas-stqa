@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'koneksi.php';
+include_once 'koneksi.php';
 
 if (!isset($_SESSION['username'])) {
     header("Location: index.php");
@@ -512,7 +512,7 @@ $query = mysqli_query($koneksi, "SELECT * FROM tb_mhs");
             <div class="slider-wrapper">
 
                 <div class="slider">
-                    <img id="sliderImage" src="">
+                    <img id="sliderImage" src="" alt="">
                     <div class="slider-overlay"></div>
                 </div>
 
@@ -594,7 +594,7 @@ $query = mysqli_query($koneksi, "SELECT * FROM tb_mhs");
                                     <?= $dataMhs['nim']; ?>
                                 </td>
 
-                                <td>
+                                <td >
                                     <span class="badge-fakultas">
                                         <?= $dataMhs['fakultas']; ?>
                                     </span>
@@ -640,7 +640,7 @@ $query = mysqli_query($koneksi, "SELECT * FROM tb_mhs");
 
     <script>
         const data = [{
-                image: "gambar_1.jpeg",
+                image: "gambar_1.png",
                 title: "Dashboard Monitoring Aset",
                 short: "Dashboard untuk memantau aset IT secara real-time...",
                 full: "Dashboard untuk memantau aset IT secara real-time. Menampilkan status perangkat, lokasi penempatan, dan kondisi operasional secara terpusat."

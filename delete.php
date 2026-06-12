@@ -25,4 +25,3 @@ if ($delete) {
     </script>
     ";
 }
-?>

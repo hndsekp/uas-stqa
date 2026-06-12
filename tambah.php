@@ -1,5 +1,6 @@
 <?php
-include 'koneksi.php';
+
+include_once 'koneksi.php';
 
 if (isset($_POST['submit'])) {
 
@@ -103,11 +104,11 @@ if (isset($_POST['submit'])) {
 
         <form method="POST">
 
-            <input type="text" name="nama" placeholder="Nama">
+            <input type="text" name="nama" placeholder="Nama" required>
 
-            <input type="text" name="nim" placeholder="NIM">
+            <input type="text" name="nim" placeholder="NIM" required>
 
-            <input type="text" name="fakultas" placeholder="Fakultas">
+            <input type="text" name="fakultas" placeholder="Fakultas" required>
 
             <button type="submit" name="submit">
                 Simpan Data

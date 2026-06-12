@@ -1,0 +1,6 @@
+projectKey=Project_UAS_STQA
+serverUrl=http://localhost:9000
+serverVersion=26.5.0.122743
+dashboardUrl=http://localhost:9000/dashboard?id=Project_UAS_STQA
+ceTaskId=edd30cf1-2b60-4080-b5b6-dab26996719e
+ceTaskUrl=http://localhost:9000/api/ce/task?id=edd30cf1-2b60-4080-b5b6-dab26996719e

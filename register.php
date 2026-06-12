@@ -1,5 +1,5 @@
 <?php
-include 'koneksi.php';
+include_once 'koneksi.php';
 
 $error = "";
 $success = "";
@@ -18,11 +18,11 @@ if (isset($_POST['register'])) {
 
         $error = "Email harus menggunakan domain @upitra.ac.id";
 
-    } else if ($password != $confirm) {
+    } elseif ($password != $confirm) {
 
         $error = "Password tidak sama!";
 
-    } else if (!preg_match('/^(?=.*[\W_]).{8,}$/', $password)) {
+    } elseif (!preg_match('/^(?=.*[\W_]).{8,}$/', $password)) {
 
         $error = "Password minimal 8 karakter dan harus mengandung simbol seperti & % $ #";
 
@@ -30,7 +30,7 @@ if (isset($_POST['register'])) {
 
         $cek = mysqli_query(
             $koneksi,
-            "SELECT * FROM users 
+            "SELECT * FROM users
             WHERE username='$username' OR email='$email'"
         );
 
